@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Srollins Restaurant</title>
+</head>
+<body>
+
+    <header class="header-menu">
+        <div class="logo">
+            <span class="material-symbols-outlined">food_bank</span>
+            <a href="/">Srollins Rest</a>
+        </div>
+
+        <nav class="nav-links">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#sucursal">Sucursales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="presentation">
+             <div class="presentation-text">
+                <h1>Bienvenido a Srollins Restaurant</h1>
+                <p>Sabores que te hacen sentir como en casa. Cocinamos con pasión y recetas que han pasado de generación, seleccionando siempre lo mejor del mercado para llevar la tradición a tu plato. <strong>¡Te esperamos!</strong></p>
+                <button onclick="location.href='#menu'" id="btn-menu">Ver Menú</button>
+            </div>
+
+            <div class="presentation-image">
+                <img src="assets/burger.png" alt="Comida deliciosa">
+            </div>
+        </section>
+
+        <section id="menu" class="menu-content">
+            <div class="menu-nav">
+                <h2>Menú</h2>
+                <ul class="menu-list">
+                    <li>Entradas</li>
+                    <li>Principales</li>
+                    <li>Bebidas</li>
+                    <li>Postres</li>
+                </ul>
+            </div>
+
+            <div class="menu-info">
+                <div class="menu-image">
+                    <img src="assets/menu.png" alt="Menú de Srollins">
+                </div>
+
+                <div class="menu-entradas">
+                    <article class="card-dish en1">
+                        <div class="f1">
+                            <img src="assets/salad.png" alt="Ensalada César">
+                            <span class="precio">$9.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Ensalada César</h3>
+                            <p>Lechuga fresca, crutones, queso parmesano y aderezo César.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en2">
+                        <div class="f1">
+                            <img src="assets/bruschetta.png" alt="Bruschettas Clásicas">
+                            <span class="precio">$12.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Bruschettas Clásicas</h3>
+                            <p>Panela de pan tostado con tomate, ajo y albahaca.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en3">
+                        <div class="f1">
+                            <img src="assets/ham.png" alt="Rollitos de Jamón">
+                            <span class="precio">$5.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Rollitos de Jamón</h3>
+                            <p>Rollos de jamón ibérico con palillos de ajo y cebolla.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en4">
+                        <div class="f1">
+                            <img src="assets/taco.png" alt="Tacos Rellenos">
+                            <span class="precio">$7.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Tacos Rellenos</h3>
+                            <p>Tortilla de maíz con carne, aguacate, queso, piña y salsa especial.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en5">
+                        <div class="f1">
+                            <img src="assets/quesadilla.png" alt="Quesadillas de Pollo y Queso">
+                            <span class="precio">$13.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Quesadillas de Pollo y Queso</h3>
+                            <p>Tortilla de harina con tomate, lechuga, cebolla, pollo y queso.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en6">
+                        <div class="f1">
+                            <img src="assets/hot-soup.png" alt="Sopa de Cebolla">
+                            <span class="precio">$14.99</span>
+                        <div>
+                        <div class="f2">
+                            <h3>Sopa de Cebolla</h3>
+                            <p>Sopa caliente de cebolla con pan tostado y queso.</p>
+                        </div>   
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="sucursal" class="sucursal-content">
+            <div class="sucursal-title">
+                <h4>Sucursales</h4>
+                <p>Descubre nuestras sucursales en diferentes ciudades.</p>
+            </div>
+
+            <div class="sucursal-main">
+                <div class="sucursal-info">
+                    <article class="card-sucursal sc1">
+                        <div class="f1">
+                            <img src="assets/food-cart.png" alt="Sucursal Ciudad de México">
+                        </div>
+                        <div class="f2">
+                            <h3>Santo Domingo</h3>
+                            <p>Av. Insurgentes 1234, Col. Roma, Ciudad de México.</p>
+                        </div>   
+                    </article>
+    
+                    <article class="card-sucursal sc2">
+                        <div class="f1">
+                            <img src="assets/food-cart.png" alt="Sucursal Guadalajara">
+                        </div>
+                        <div class="f2">
+                            <h3>Santiago</h3>
+                            <p>Av. Chapultepec 5678, Col. Americana, Guadalajara.</p>
+                        </div>   
+                    </article>
+    
+                    <article class="card-sucursal sc3">
+                        <div class="f1">
+                            <img src="assets/food-cart.png" alt="Sucursal Monterrey">
+                        </div>
+                        <div class="f2">
+                            <h3>Punta Cana</h3>
+                            <p>Av. Constitución 9101, Col. Centro, Monterrey.</p>
+                        <div>   
+                    </article>
+    
+                    <article class="card-sucursal sc4">
+                        <div class="f1">
+                            <img src="assets/food-cart.png" alt="Sucursal Puebla">
+                        </div>
+                        <div class="f2">
+                            <h3>San Cristóbal</h3>
+                            <p>Av. Juárez 2345, Col. Centro, Puebla.</p>
+                        </div>   
+                    </article>
+                </div>
+
+                <div class="sucursal-image">
+                    <img src="assets/food-cart.png" alt="Sucursales de Srollins">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-res">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4>Contáctanos</h4>
+                <p>Email: <span>info@srollins.com</span></p>
+            </div>
+
+            <div class="social-media">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Horario</h4>
+                <p>Lun - Vie: 09:00 AM - 10:00 PM</p>
+                <p>Sáb - Dom: 12:00 PM - 10:00 PM</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+                <p>&copy; 2026 Srollins Restaurant. Todos los derechos reservados.</p>
+            </div>
+    </footer>
+    
+</body>
+</html>

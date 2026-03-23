@@ -502,8 +502,18 @@ table {
 
     .menu-hamburger {
         display: flex;
-        margin: 0 60px;
+        margin: 0 40px;
     }
+
+    .sucursal-image, .menu-image {
+        display: none;
+    }
+
+    .menu-entradas, .sucursal-info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {

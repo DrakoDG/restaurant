@@ -70,12 +70,30 @@ table {
 /* Header */
 
 .header-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2rem;
+    padding: 1rem 1rem;
     border-bottom: 3px solid var(--color-black);
     background-color: var(--color-grey);
+    z-index: 1000;
+}
+
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: whitesmoke;
+    transition: 0.3s;
 }
 
 .logo {
@@ -100,12 +118,12 @@ table {
 .nav-list {
     display: flex;
     padding: 0;
-    margin: 0;
+    margin: 0 60px;
     list-style: none;
 }
 
 .nav-list li {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .nav-list a {
@@ -435,7 +453,7 @@ table {
     font-family: 'League Spartan', sans-serif;
     font-size: 24px;
     font-weight: 700;
-    color: var(--color-white);
+    color: var(--color-blue);
     margin: 10px 0;
 }
 
@@ -465,7 +483,30 @@ table {
     color: var(--color-black);
 }
 
-@media screen and (min-width: 300px) and (max-width: 1200px) {
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: var(--color-grey);
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .menu-hamburger {
+        display: flex;
+        margin: 0 40px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
     .presentation, .menu-content, .sucursal-content {
         flex-direction: column;
         text-align: center;

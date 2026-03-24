@@ -473,14 +473,14 @@ table {
 }
 
 .social-icons a {
-    color: var(--color-blue);
+    color: var(--color-grey);
     font-size: 30px;
     margin: 0 10px;
     transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: var(--color-black);
+    color: var(--color-blue);
 }
 
 @media (max-width: 768px) {
@@ -502,7 +502,7 @@ table {
 
     .menu-hamburger {
         display: flex;
-        margin: 0 40px;
+        margin: 0 60px;
     }
 
     .sucursal-image, .menu-image {
@@ -514,6 +514,12 @@ table {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .menu-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {

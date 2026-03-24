@@ -492,17 +492,27 @@ table {
     .nav-list {
         display: none;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
         position: absolute;
-        top: 60px;
+        top: 85px;
         right: 0;
         background: var(--color-grey);
         width: 100%;
-        text-align: center;
-        padding: 20px 0;
+        height: 100vh;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+    }
+
+    .nav-list a:hover {
+        padding: 12px 90px;
     }
 
     .nav-list.show {
         display: flex;
+        gap: 50px;
     }
 
     .menu-hamburger {

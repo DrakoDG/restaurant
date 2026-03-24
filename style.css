@@ -23,13 +23,17 @@ time, mark, audio, video {
     vertical-align: baseline;
     list-style: none;
     text-decoration: none;
-    scroll-behavior: smooth;
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 body {

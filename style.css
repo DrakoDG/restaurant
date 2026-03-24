@@ -145,6 +145,7 @@ table {
 /* Main */
 
 .main-content {
+    margin-top: 90px;
     align-items: center;
     justify-content: center;
 }

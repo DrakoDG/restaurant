@@ -49,10 +49,10 @@
             <div class="menu-nav">
                 <h2>Menú</h2>
                 <ul class="menu-list">
-                    <li>Entradas</li>
-                    <li>Principales</li>
-                    <li>Bebidas</li>
-                    <li>Postres</li>
+                    <li class="category-btn active" data-target="entradas">Entradas</li>
+                    <li class="category-btn" data-target="principales">Principales</li>
+                    <li class="category-btn" data-target="bebidas">Bebidas</li>
+                    <li class="category-btn" data-target="postres">Postres</li>
                 </ul>
             </div>
 
@@ -61,7 +61,9 @@
                     <img src="assets/menu.png" alt="Menú de Srollins">
                 </div>
 
-                <div class="menu-entradas">
+                <!-- MENU - PLATOS ENTRANTES --> 
+
+                <div class="menu-item" data-category="entradas">
                     <article class="card-dish en1">
                         <div class="f1">
                             <img src="assets/salad.png" alt="Ensalada César">
@@ -128,6 +130,206 @@
                         </div>   
                     </article>
                 </div>
+
+                <!-- MENU - PLATOS PRINCIPALES --> 
+
+                <div class="menu-item hidden" data-category="principales">
+                    <article class="card-dish en1">
+                        <div class="f1">
+                            <img src="assets/arroz-con-pollo.png" alt="Ensalada César">
+                            <span class="precio">$15.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Arroz con Pollo</h3>
+                            <p>Arroz blanco con pollo cocido y verduras.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en2">
+                        <div class="f1">
+                            <img src="assets/bife.png" alt="Bruschettas Clásicas">
+                            <span class="precio">$12.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Bistec a la Parrilla</h3>
+                            <p>Carne de res a la parrilla con verduras asadas.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en3">
+                        <div class="f1">
+                            <img src="assets/hamburguer.png" alt="Rollitos de Jamón">
+                            <span class="precio">$5.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Hamburguesa Clásica</h3>
+                            <p>Carne molida, lechuga, tomate, cebolla y queso.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en4">
+                        <div class="f1">
+                            <img src="assets/pescado-y-papas-fritas.png" alt="Tacos Rellenos">
+                            <span class="precio">$7.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Pescado con Papas</h3>
+                            <p>Pescado fresco con papas fritas y salsa de limón.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en5">
+                        <div class="f1">
+                            <img src="assets/espaguetis.png" alt="Quesadillas de Pollo y Queso">
+                            <span class="precio">$13.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Espaguetis Blancos</h3>
+                            <p>Espaguetis cocidos en agua con salsa blanca y queso parmesano.</p>
+                        </div>   
+                    </article>
+                </div>
+
+                <!-- MENU - BEBIDAS --> 
+
+                <div class="menu-item hidden" data-category="bebidas">
+                    <article class="card-dish en1">
+                        <div class="f1">
+                            <img src="assets/coffee-cups.png" alt="Ensalada César">
+                            <span class="precio">$9.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Taza de Café</h3>
+                            <p>Latte artesanal con leche vaporizada.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en2">
+                        <div class="f1">
+                            <img src="assets/te-caliente.png" alt="Bruschettas Clásicas">
+                            <span class="precio">$12.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Taza de Té</h3>
+                            <p>Té caliente con limón y miel.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en3">
+                        <div class="f1">
+                            <img src="assets/pina-colada.png" alt="Rollitos de Jamón">
+                            <span class="precio">$5.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Piña Colada</h3>
+                            <p>Piña colada con hielo y salsa de chocolate.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en4">
+                        <div class="f1">
+                            <img src="assets/zumo-de-naranja.png" alt="Tacos Rellenos">
+                            <span class="precio">$7.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Jugo de Naranja</h3>
+                            <p>Jugo de naranja natural con hielo.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en5">
+                        <div class="f1">
+                            <img src="assets/cocteles.png" alt="Quesadillas de Pollo y Queso">
+                            <span class="precio">$13.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Cóctel de Limón</h3>
+                            <p>Cóctel de limón con hielo y salsa de chocolate.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en5">
+                        <div class="f1">
+                            <img src="assets/cerveza.png" alt="Quesadillas de Pollo y Queso">
+                            <span class="precio">$13.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Vaso de Cerveza</h3>
+                            <p>Vaso de cerveza con hielo y limón.</p>
+                        </div>   
+                    </article>
+                </div>
+
+                <!-- MENU - POSTRES --> 
+
+                <div class="menu-item hidden" data-category="postres">
+                    <article class="card-dish en1">
+                        <div class="f1">
+                            <img src="assets/tarta-de-queso.png" alt="Ensalada César">
+                            <span class="precio">$9.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Tarta de Queso</h3>
+                            <p>Tarta de queso con base de galleta y crema.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en2">
+                        <div class="f1">
+                            <img src="assets/pastel.png" alt="Bruschettas Clásicas">
+                            <span class="precio">$12.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Pastel de Chocolate</h3>
+                            <p>Pastel de chocolate con relleno de crema y frutas frescas.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en3">
+                        <div class="f1">
+                            <img src="assets/brownie.png" alt="Rollitos de Jamón">
+                            <span class="precio">$5.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Brownie</h3>
+                            <p>Brownie con nueces y salsa de chocolate.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en4">
+                        <div class="f1">
+                            <img src="assets/mollete.png" alt="Tacos Rellenos">
+                            <span class="precio">$7.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Cake de Chocolate</h3>
+                            <p>Cake con chispitas de chocolate granizadas.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en5">
+                        <div class="f1">
+                            <img src="assets/parfait.png" alt="Quesadillas de Pollo y Queso">
+                            <span class="precio">$13.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Parfait</h3>
+                            <p>Parfait con frutas frescas y salsa de chocolate.</p>
+                        </div>   
+                    </article>
+
+                    <article class="card-dish en5">
+                        <div class="f1">
+                            <img src="assets/copa-de-helado.png" alt="Quesadillas de Pollo y Queso">
+                            <span class="precio">$13.99</span>
+                        </div>
+                        <div class="f2">
+                            <h3>Copa de Helado</h3>
+                            <p>Copa de helado con frutas frescas y salsa de chocolate.</p>
+                        </div>   
+                    </article>
+                </div>
+
             </div>
         </section>
 
@@ -146,6 +348,7 @@
                         <div class="f2">
                             <h3>Santo Domingo</h3>
                             <p>Av. Insurgentes 1234, Col. Roma, Ciudad de México.</p>
+                             <a href="http://maps.app.goo.gl/ouvyJFv1rkCpgUCz5" target="_blank" rel="noopener noreferrer"><button class="btn-ubi">Ubicación</button></a>
                         </div>   
                     </article>
     
@@ -156,6 +359,7 @@
                         <div class="f2">
                             <h3>Santiago</h3>
                             <p>Av. Chapultepec 5678, Col. Americana, Guadalajara.</p>
+                             <a href="http://maps.app.goo.gl/ouvyJFv1rkCpgUCz5" target="_blank" rel="noopener noreferrer"><button class="btn-ubi">Ubicación</button></a>
                         </div>   
                     </article>
     
@@ -166,7 +370,8 @@
                         <div class="f2">
                             <h3>Punta Cana</h3>
                             <p>Av. Constitución 9101, Col. Centro, Monterrey.</p>
-                        <div>   
+                             <a href="http://maps.app.goo.gl/ouvyJFv1rkCpgUCz5" target="_blank" rel="noopener noreferrer"><button class="btn-ubi">Ubicación</button></a>
+                        </div>   
                     </article>
     
                     <article class="card-sucursal sc4">
@@ -176,6 +381,7 @@
                         <div class="f2">
                             <h3>San Cristóbal</h3>
                             <p>Av. Juárez 2345, Col. Centro, Puebla.</p>
+                        <a href="http://maps.app.goo.gl/ouvyJFv1rkCpgUCz5" target="_blank" rel="noopener noreferrer"><button class="btn-ubi">Ubicación</button></a>
                         </div>   
                     </article>
                 </div>
@@ -197,9 +403,9 @@
             <div class="social-media">
                 <h4>Síguenos</h4>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
 

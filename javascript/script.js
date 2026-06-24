@@ -19,3 +19,27 @@ navLinks.forEach(link => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".category-btn");
+    const items = document.querySelectorAll(".menu-item");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            buttons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            const targetCategory = button.getAttribute("data-target");
+
+            items.forEach(item => {
+                const itemCategory = item.getAttribute("data-category");
+
+                if (itemCategory === targetCategory) {
+                    item.classList.remove("hidden");
+                } else {
+                    item.classList.add("hidden");
+                }
+            });
+        });
+    });
+});
